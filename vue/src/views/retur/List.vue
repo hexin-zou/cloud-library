@@ -77,7 +77,7 @@ export default {
   },
   methods: {
     load() {
-      request.get('/borrow/borrow/pageRetur', {
+      request.get('/br/borrow/pageRetur', {
         params: this.params
       }).then(res => {
         if (res.code === '200') {
@@ -102,7 +102,7 @@ export default {
       this.load()
     },
     del(id) {
-      request.delete("/borrow/borrow/deleteRetur/" + id).then(res => {
+      request.delete("/br/borrow/deleteRetur/" + id).then(res => {
         if (res.code === '200') {
           this.$notify.success('删除成功')
           this.load()

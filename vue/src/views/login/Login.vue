@@ -43,7 +43,10 @@ export default {
   data() {
     return {
       loginAdmin: {},
-      admin: {},
+      admin: {
+        username: 'admin',
+        password: 'admin'
+      },
       rules: {
         username: [
           { required: true, message: '请输入用户名', trigger: 'blur'},

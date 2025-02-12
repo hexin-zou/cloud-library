@@ -35,6 +35,12 @@
                 <version>2.4.2</version>
                 <type>pom</type>
                 <scope>import</scope>
+                <exclusions>
+                    <exclusion>
+                        <groupId>org.springframework.boot</groupId>
+                        <artifactId>spring-boot-starter-security</artifactId>
+                    </exclusion>
+                </exclusions>
             </dependency>
             <!-- SpringCloud 微服务 -->
             <dependency>

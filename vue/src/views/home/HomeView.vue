@@ -91,7 +91,7 @@ const option = {
           this.lineBox = echarts.init(document.getElementById('line'))  // 初始化echarts容器
         }
         // 从后台获取数据
-        request.get('/borrow/borrow/lineCharts/' + this.timeRange).then(res => {
+        request.get('/br/borrow/lineCharts/' + this.timeRange).then(res => {
           option.xAxis.data = res.data.date
           option.series[0].data = res.data.borrow
           option.series[1].data = res.data.retur

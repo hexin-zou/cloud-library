@@ -3,11 +3,8 @@ import router from "@/router";
 import Cookies from 'js-cookie'
 
 const request = axios.create({
-    baseURL: 'http://localhost:8080/api',
+    baseURL: process.env.VUE_APP_BASE_API,
     timeout: 5000,
-    headers: {
-        'Content-Type': 'application/json'
-    }
 })
 
 // request 拦截器

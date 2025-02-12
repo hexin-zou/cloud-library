@@ -79,7 +79,6 @@
             <version> 1.18.34</version> <!-- 使用最新版本 -->
             <scope>provided</scope>
         </dependency>
-
     </dependencies>
     <build>
         <plugins>

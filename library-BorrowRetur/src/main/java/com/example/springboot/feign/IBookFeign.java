@@ -1,6 +1,6 @@
 package com.example.springboot.feign;
 
-import com.example.springboot.entity.Book;
+import com.example.springboot.api.entity.Book;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;

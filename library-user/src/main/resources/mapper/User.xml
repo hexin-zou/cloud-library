@@ -17,12 +17,12 @@
     <delete id="deleteById">
         delete from user where id = #{id}
     </delete>
-    <select id="list" resultType="com.example.springboot.entity.User">
+    <select id="list" resultType="com.example.springboot.api.entity.User">
         select * from user
     </select>
 
 
-    <select id="listByCondition" resultType="com.example.springboot.entity.User">
+    <select id="listByCondition" resultType="com.example.springboot.api.entity.User">
         select * from user
         <where>
             <if test="name != null and name != ''">
@@ -35,11 +35,11 @@
         order by id desc
     </select>
 
-    <select id="getById" resultType="com.example.springboot.entity.User">
+    <select id="getById" resultType="com.example.springboot.api.entity.User">
         select * from user where id = #{id}
     </select>
 
-    <select id="getByUsername" resultType="com.example.springboot.entity.User">
+    <select id="getByUsername" resultType="com.example.springboot.api.entity.User">
         select * from user where username = #{username}
     </select>
 

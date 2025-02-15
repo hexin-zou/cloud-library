@@ -1,8 +1,8 @@
 package com.example.springboot.service;
 
 import com.example.springboot.api.ICategoryService;
-import com.example.springboot.request.BaseRequest;
-import com.example.springboot.entity.Category;
+import com.example.springboot.api.request.BaseRequest;
+import com.example.springboot.api.entity.Category;
 import com.example.springboot.mapper.CategoryMapper;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;

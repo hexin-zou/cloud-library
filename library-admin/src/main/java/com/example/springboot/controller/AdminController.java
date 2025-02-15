@@ -3,11 +3,11 @@ package com.example.springboot.controller;
 import com.example.springboot.api.IAdminService;
 import com.example.springboot.common.Result;
 
-import com.example.springboot.dto.LoginDTO;
-import com.example.springboot.request.AdminPageRequest;
-import com.example.springboot.request.LoginRequest;
-import com.example.springboot.request.PasswordRequest;
-import com.example.springboot.entity.Admin;
+import com.example.springboot.api.dto.LoginDTO;
+import com.example.springboot.api.request.AdminPageRequest;
+import com.example.springboot.api.request.LoginRequest;
+import com.example.springboot.api.request.PasswordRequest;
+import com.example.springboot.api.entity.Admin;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -67,4 +67,9 @@ public class AdminController {
         return Result.success(adminService.page(pageRequest));
     }
 
+    @GetMapping("/token/{id}")
+    public Admin getById2(@PathVariable Integer id) {
+        Admin obj = adminService.getById(id);
+        return obj;
+    }
 }

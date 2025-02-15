@@ -1,4 +1,4 @@
-package com.example.springboot.request;
+package com.example.springboot.api.request;
 
 import lombok.Data;
 

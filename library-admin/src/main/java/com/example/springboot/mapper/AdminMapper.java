@@ -1,7 +1,7 @@
 package com.example.springboot.mapper;
-import com.example.springboot.request.BaseRequest;
-import com.example.springboot.request.PasswordRequest;
-import com.example.springboot.entity.Admin;
+import com.example.springboot.api.request.BaseRequest;
+import com.example.springboot.api.request.PasswordRequest;
+import com.example.springboot.api.entity.Admin;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 

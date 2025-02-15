@@ -1,7 +1,7 @@
 package com.example.springboot.mapper;
 
-import com.example.springboot.request.BaseRequest;
-import com.example.springboot.entity.Book;
+import com.example.springboot.api.request.BaseRequest;
+import com.example.springboot.api.entity.Book;
 import org.apache.ibatis.annotations.Mapper;
 
 import java.util.List;

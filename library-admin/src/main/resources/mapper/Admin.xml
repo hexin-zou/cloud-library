@@ -21,11 +21,11 @@
         delete from admin where id = #{id}
     </delete>
 
-    <select id="list" resultType="com.example.springboot.entity.Admin">
+    <select id="list" resultType="com.example.springboot.api.entity.Admin">
         select * from admin order by id desc
     </select>
 
-    <select id="listByCondition" resultType="com.example.springboot.entity.Admin">
+    <select id="listByCondition" resultType="com.example.springboot.api.entity.Admin">
         select * from admin
         <where>
             <if test="username != null and username != ''">
@@ -41,15 +41,15 @@
         order by id desc
     </select>
 
-    <select id="getById" resultType="com.example.springboot.entity.Admin">
+    <select id="getById" resultType="com.example.springboot.api.entity.Admin">
         select * from admin where id = #{id}
     </select>
 
-    <select id="getByUsernameAndPassword" resultType="com.example.springboot.entity.Admin">
+    <select id="getByUsernameAndPassword" resultType="com.example.springboot.api.entity.Admin">
         select * from admin where username = #{username} and password = #{password}
     </select>
 
-    <select id="getByUsername" resultType="com.example.springboot.entity.Admin">
+    <select id="getByUsername" resultType="com.example.springboot.api.entity.Admin">
         select * from admin where username = #{username}
     </select>
 

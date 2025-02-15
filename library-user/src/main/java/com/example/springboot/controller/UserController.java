@@ -2,8 +2,8 @@ package com.example.springboot.controller;
 
 import com.example.springboot.api.IUserService;
 import com.example.springboot.common.Result;
-import com.example.springboot.request.UserPageRequest;
-import com.example.springboot.entity.User;
+import com.example.springboot.api.request.UserPageRequest;
+import com.example.springboot.api.entity.User;
 import com.github.pagehelper.PageInfo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;

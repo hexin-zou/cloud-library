@@ -1,8 +1,8 @@
 package com.example.springboot.mapper;
 
-import com.example.springboot.request.BaseRequest;
-import com.example.springboot.entity.Borrow;
-import com.example.springboot.entity.Retur;
+import com.example.springboot.api.request.BaseRequest;
+import com.example.springboot.api.entity.Borrow;
+import com.example.springboot.api.entity.Retur;
 import com.example.springboot.po.BorrowReturCountPO;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;

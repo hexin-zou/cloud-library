@@ -12,11 +12,10 @@ module.exports = {
         target: 'http://localhost:8080',
         changeOrigin: true,
         pathRewrite: {
-          '^/dev-api': '' // 将以/dev-api开头的请求路径重写为目标服务器的请求路径
+          '^/dev-api': ''
         }
       }
     }
   }
 };
-
 

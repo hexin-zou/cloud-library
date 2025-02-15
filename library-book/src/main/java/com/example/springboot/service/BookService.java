@@ -2,8 +2,8 @@ package com.example.springboot.service;
 
 import cn.hutool.core.collection.CollUtil;
 import com.example.springboot.api.IBookService;
-import com.example.springboot.request.BaseRequest;
-import com.example.springboot.entity.Book;
+import com.example.springboot.api.request.BaseRequest;
+import com.example.springboot.api.entity.Book;
 import com.example.springboot.exception.ServiceException;
 import com.example.springboot.mapper.BookMapper;
 import com.github.pagehelper.PageHelper;

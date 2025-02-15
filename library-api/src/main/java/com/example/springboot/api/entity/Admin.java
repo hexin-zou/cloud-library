@@ -1,21 +1,21 @@
-package com.example.springboot.entity;
+package com.example.springboot.api.entity;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import java.util.Date;
 
+@NoArgsConstructor
+@AllArgsConstructor
 @Data
-public class User {
+public class Admin {
     private Integer id;
-    private String name;
     private String username;
-    private Integer age;
-    private Integer account;
-    private Integer score;
-    private String sex;
     private String phone;
-    private String address;
+    private String email;
+    private String password;
     @JsonFormat(pattern = "yyyy-MM-dd", timezone = "GMT+8")
     private Date createtime;
     @JsonFormat(pattern = "yyyy-MM-dd", timezone = "GMT+8")

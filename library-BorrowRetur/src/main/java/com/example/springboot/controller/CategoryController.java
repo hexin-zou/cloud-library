@@ -3,8 +3,8 @@ package com.example.springboot.controller;
 import cn.hutool.core.collection.CollUtil;
 import com.example.springboot.api.ICategoryService;
 import com.example.springboot.common.Result;
-import com.example.springboot.request.CategoryPageRequest;
-import com.example.springboot.entity.Category;
+import com.example.springboot.api.request.CategoryPageRequest;
+import com.example.springboot.api.entity.Category;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 

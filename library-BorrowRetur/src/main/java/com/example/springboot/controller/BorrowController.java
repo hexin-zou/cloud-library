@@ -2,9 +2,9 @@ package com.example.springboot.controller;
 
 import com.example.springboot.api.IBorrowService;
 import com.example.springboot.common.Result;
-import com.example.springboot.request.BorrowPageRequest;
-import com.example.springboot.entity.Borrow;
-import com.example.springboot.entity.Retur;
+import com.example.springboot.api.request.BorrowPageRequest;
+import com.example.springboot.api.entity.Borrow;
+import com.example.springboot.api.entity.Retur;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 

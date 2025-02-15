@@ -4,20 +4,20 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.example.springboot.mapper.CategoryMapper">
 
-    <resultMap id="categoryMap" type="com.example.springboot.entity.Category">
+    <resultMap id="categoryMap" type="com.example.springboot.api.entity.Category">
         <id column="id" property="id" />
         <result column="name" property="name" />
         <result column="remark" property="remark" />
         <result column="pid" property="pid" />
         <result column="createtime" property="createtime" />
         <result column="updatetime" property="updatetime" />
-        <collection property="children" ofType="com.example.springboot.entity.Category" column="{id=id, name1=queryName}" select="selectByPid" />
+        <collection property="children" ofType="com.example.springboot.api.entity.Category" column="{id=id, name1=queryName}" select="selectByPid" />
     </resultMap>
 
     <!--    { name1=queryName }  前面的name1是子集待使用的参数名称， queryName是父级传给子集的属性，queryName必须是父级的一个查询属性，
         也就是把 queryName赋值给了name1，然后使用 -->
 
-    <select id="selectByPid" resultType="com.example.springboot.entity.Category">
+    <select id="selectByPid" resultType="com.example.springboot.api.entity.Category">
         select * from category where pid = #{id}
         <if test="name1 != null and name1 != ''">
             and name like concat('%', #{name1}, '%')
@@ -51,11 +51,11 @@
         delete from category where id = #{id}
     </delete>
 
-    <select id="list" resultType="com.example.springboot.entity.Category">
+    <select id="list" resultType="com.example.springboot.api.entity.Category">
         select * from category order by id desc
     </select>
 
-    <select id="getById" resultType="com.example.springboot.entity.Category">
+    <select id="getById" resultType="com.example.springboot.api.entity.Category">
         select * from category where id = #{id}
     </select>
 </mapper>

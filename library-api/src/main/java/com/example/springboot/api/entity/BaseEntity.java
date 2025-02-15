@@ -1,21 +1,27 @@
-package com.example.springboot.entity;
+package com.example.springboot.api.entity;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.Data;
 
+import java.io.Serializable;
 import java.time.LocalDate;
-import java.util.List;
 
 @Data
-public class Category {
+public class BaseEntity implements Serializable {
+    private static final long serialVersionUID = 1L;
+
     private Integer id;
-    private String name;
-    private String remark;
-    private Integer pid;
+
+    /**
+     * 创建时间
+     */
     @JsonFormat(pattern = "yyyy-MM-dd", timezone = "GMT+8")
     private LocalDate createtime;
+
+    /**
+     * 更新时间
+     */
     @JsonFormat(pattern = "yyyy-MM-dd", timezone = "GMT+8")
     private LocalDate updatetime;
 
-    private List<Category> children;
 }

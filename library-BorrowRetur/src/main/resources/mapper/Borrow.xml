@@ -4,7 +4,7 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.example.springboot.mapper.BorrowMapper">
 
-    <select id="listByCondition" resultType="com.example.springboot.entity.Borrow">
+    <select id="listByCondition" resultType="com.example.springboot.api.entity.Borrow">
         select * from borrow
         <where>
             <if test="bookName != null and bookName != ''">
@@ -20,7 +20,7 @@
         order by id desc
     </select>
 
-    <select id="listReturByCondition" resultType="com.example.springboot.entity.Retur">
+    <select id="listReturByCondition" resultType="com.example.springboot.api.entity.Retur">
         select * from retur
         <where>
             <if test="bookName != null and bookName != ''">
@@ -64,11 +64,11 @@
         delete from retur where id = #{id}
     </delete>
 
-    <select id="list" resultType="com.example.springboot.entity.Borrow">
+    <select id="list" resultType="com.example.springboot.api.entity.Borrow">
         select * from borrow order by id desc
     </select>
 
-    <select id="getById" resultType="com.example.springboot.entity.Borrow">
+    <select id="getById" resultType="com.example.springboot.api.entity.Borrow">
         select * from borrow where id = #{id}
     </select>
 

@@ -1,7 +1,7 @@
 package com.example.springboot.api;
 
-import com.example.springboot.request.BaseRequest;
-import com.example.springboot.entity.User;
+import com.example.springboot.api.request.BaseRequest;
+import com.example.springboot.api.entity.User;
 import com.github.pagehelper.PageInfo;
 
 import java.util.List;

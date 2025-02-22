@@ -8,8 +8,8 @@ public class Result {
     private static final String ERROR_CODE = "-1";
 
     private String code;
-    private Object data;
     private String msg;
+    private Object data;
 
     public static Result success() {
         Result result = new Result();
@@ -30,7 +30,6 @@ public class Result {
         result.setMsg(msg);
         return result;
     }
-
     public static Result error(String code, String msg) {
         Result result = new Result();
         result.setCode(code);

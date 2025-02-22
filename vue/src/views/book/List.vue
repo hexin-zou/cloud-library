@@ -9,7 +9,7 @@
     </div>
 
     <el-table :data="tableData" stripe row-key="id"  default-expand-all>
-      <el-table-column prop="id" label="编号" width="80"></el-table-column>
+      <el-table-column prop="id " label="编号" width="80"></el-table-column>
       <el-table-column prop="name" label="图书名称"></el-table-column>
       <el-table-column prop="bookNo" label="标准码"></el-table-column>
       <el-table-column prop="description" width="200" label="描述"></el-table-column>
